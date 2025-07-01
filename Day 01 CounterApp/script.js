@@ -4,7 +4,6 @@ const increment = document.querySelector(".increment");
 const reset = document.querySelector(".reset");
 
 let counter = parseInt(count.textContent);
-
 decrement.addEventListener("mousedown", () => {
   counter--;
   count.textContent = counter;
