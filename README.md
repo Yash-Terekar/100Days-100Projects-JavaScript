@@ -33,7 +33,7 @@ Each project focuses on building logic, UI, animations, and real functionality t
 | Day        | Project Name              | Status      |
 | ---------- | ------------------------- | ----------- |
 | ✅ Day 1   | Counter App               | Completed   |
-| 🔜 Day 2   | Random Quote Generator    | Coming Soon |
+| ✅ Day 2   | Random Quote Generator    | Completed   |
 | 🔜 Day 3   | Digital Clock             | Coming Soon |
 | 🔜 Day 4   | To-Do List (Basic)        | Coming Soon |
 | 🔜 Day 5   | BMI Calculator            | Coming Soon |
