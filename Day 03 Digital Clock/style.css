@@ -11,9 +11,9 @@ body {
   justify-content: center;
 }
 .container {
-  width: 60%;
-  height: 60%;
-  background: purple;
+  width: 1000px;
+  height: 540px;
+  background: rgb(92, 0, 183);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -62,4 +62,41 @@ body {
 .year {
   padding: 10px;
   font-size: 2rem;
+}
+@media (max-width: 1000px) {
+  .container {
+    width: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: 400px;
+  }
+  .time {
+    margin-top: 70px;
+    font-size: 5rem;
+  }
+  .btn {
+    padding: 6px 14px;
+  }
+}
+@media (max-width: 380px) {
+  .container {
+    width: 90%;
+  }
+  .btn {
+    padding: 6px 14px;
+    font-size: 1.2rem;
+  }
+  .time {
+    font-size: 3rem;
+  }
+  .day {
+    font-size: 2rem;
+  }
+  .date,
+  .month,
+  .year {
+    font-size: 1.6rem;
+  }
 }

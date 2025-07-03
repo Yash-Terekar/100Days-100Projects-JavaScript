@@ -17,25 +17,25 @@ let weekDays = [
   "Saturday",
 ];
 let yearMonths = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
+  "January",
+  "February",
+  "March",
+  "April",
   "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
 ];
 
-let is24Hours = false;
+let is24Hours = true;
 
 function digitalClock() {
   const now = new Date();
-  let hours = now.getHours().toString().padStart(2, 0);
+  let hours = now.getHours();
   const minutes = now.getMinutes().toString().padStart(2, 0);
   const seconds = now.getSeconds().toString().padStart(2, 0);
   const days = now.getDay();
@@ -47,12 +47,16 @@ function digitalClock() {
   const nowMonth = yearMonths[months];
 
   if (is24Hours) {
-    time.textContent = `${hours}:${minutes}:${seconds}`;
+    time.textContent = `${hours
+      .toString()
+      .padStart(2, 0)}:${minutes}:${seconds}`;
     format.textContent = "";
   } else {
     let ampm = hours > 12 ? "PM" : "AM";
     hours = hours % 12 || 12;
-    time.textContent = `${hours}:${minutes}:${seconds}`;
+    time.textContent = `${hours
+      .toString()
+      .padStart(2, 0)}:${minutes}:${seconds}`;
     format.textContent = ampm;
   }
 
