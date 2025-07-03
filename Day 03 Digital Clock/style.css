@@ -5,63 +5,61 @@
 }
 body {
   background: #000;
+  height: 100vh;
   display: flex;
   align-items: center;
-  min-height: 100vh;
   justify-content: center;
 }
 .container {
-  width: 1000px;
-  height: 600px;
+  width: 60%;
+  height: 60%;
   background: purple;
-  border-radius: 20px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 10px;
 }
 .container.light {
-  background: #fff;
-  color: #000;
+  background: white;
 }
 .toggle {
+  width: 60%;
   margin-top: 40px;
-  width: 80%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
 }
-.toggle-btn {
-  padding: 10px 40px;
-  font-size: 1.4rem;
-  border: none;
+.btn {
+  padding: 10px 30px;
+  background: white;
+  font-size: 2rem;
   border-radius: 10px;
+  border-style: none;
   cursor: pointer;
-  background: #555;
+  border: 2px solid black;
+}
+.btn.active {
+  background: rgb(92, 0, 183);
   color: #fff;
 }
-.toggle-btn.active {
-  background: #007bff;
-}
-
 .time {
-  font-size: 8rem;
-  font-family: sans-serif;
-  font-weight: 500;
+  margin-top: 14%;
+  font-size: 9rem;
 }
 .format {
-  justify-self: end;
-  font-size: 2rem;
-}
-.calender,
-.day {
   display: flex;
-  font-size: 3rem;
-  margin-top: 20px;
-  justify-content: center;
+  justify-self: flex-end;
+  font-size: 1.4rem;
+}
+.day {
+  margin-top: 10px;
+  font-size: 4rem;
+}
+.calender {
+  display: flex;
 }
 .date,
 .month,
 .year {
-  margin-left: 15px;
+  padding: 10px;
+  font-size: 2rem;
 }

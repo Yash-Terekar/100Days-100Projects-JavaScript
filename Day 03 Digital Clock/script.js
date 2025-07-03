@@ -3,11 +3,11 @@ const theme = document.querySelector(".theme");
 const time = document.querySelector(".time");
 const format = document.querySelector(".format");
 const day = document.querySelector(".day");
-const month = document.querySelector(".month");
 const date = document.querySelector(".date");
+const month = document.querySelector(".month");
 const year = document.querySelector(".year");
 
-const weekDays = [
+let weekDays = [
   "Sunday",
   "Monday",
   "Tuesday",
@@ -16,61 +16,58 @@ const weekDays = [
   "Friday",
   "Saturday",
 ];
-const yearMonths = [
-  "January",
-  "February",
-  "March",
-  "April",
+let yearMonths = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
   "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
 ];
 
-let is24Hour = true;
+let is24Hours = false;
 
-function updateClock() {
+function digitalClock() {
   const now = new Date();
-  let hours = now.getHours();
-  const minutes = now.getMinutes().toString().padStart(2, "0");
-  const seconds = now.getSeconds().toString().padStart(2, "0");
+  let hours = now.getHours().toString().padStart(2, 0);
+  const minutes = now.getMinutes().toString().padStart(2, 0);
+  const seconds = now.getSeconds().toString().padStart(2, 0);
   const days = now.getDay();
-  const monthdate = now.getDate();
+  const dates = now.getDate();
   const months = now.getMonth();
   const years = now.getFullYear();
 
-  const daytext = weekDays[days];
-  const monthtext = yearMonths[months];
-  const datetext = monthdate;
-  const yeartext = years;
+  const nowday = weekDays[days];
+  const nowMonth = yearMonths[months];
 
-  let formatTime;
-  if (is24Hour) {
-    formatTime = `${hours.toString().padStart(2, "0")}:${minutes}:${seconds}`;
+  if (is24Hours) {
+    time.textContent = `${hours}:${minutes}:${seconds}`;
     format.textContent = "";
   } else {
-    const ampm = hours >= 12 ? "PM" : "AM";
-    hours = hours % 12 || 12; // Convert 0 to 12 for midnight
-    formatTime = `${hours.toString().padStart(2, "0")}:${minutes}:${seconds}`;
+    let ampm = hours > 12 ? "PM" : "AM";
+    hours = hours % 12 || 12;
+    time.textContent = `${hours}:${minutes}:${seconds}`;
     format.textContent = ampm;
   }
 
-  time.textContent = formatTime;
-  day.textContent = daytext;
-  date.textContent = datetext;
-  month.textContent = monthtext;
-  year.textContent = yeartext;
+  day.textContent = nowday;
+  date.textContent = dates;
+  month.textContent = nowMonth;
+  year.textContent = years;
 }
 
 formatter.addEventListener("click", () => {
-  is24Hour = !is24Hour;
-  formatter.textContent = is24Hour ? "24 Hrs" : "12 Hrs";
+  is24Hours = !is24Hours;
   formatter.classList.toggle("active");
-  updateClock();
+  formatter.textContent = formatter.classList.contains("active")
+    ? "12 Hrs"
+    : "24 Hrs";
 });
 
 theme.addEventListener("click", () => {
@@ -80,5 +77,5 @@ theme.addEventListener("click", () => {
   theme.classList.toggle("active");
 });
 
-setInterval(updateClock, 1000);
-updateClock();
+setInterval(() => digitalClock(), 1000);
+digitalClock();
