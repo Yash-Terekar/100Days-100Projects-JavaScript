@@ -14,7 +14,7 @@ This project displays the current time in HH:MM:SS AM/PM format and updates ever
 
 ### 🔹 Night Mode (Optional)
 
-![Night Clock](./screenshots/DigitalClock.png.png)
+![Night Clock](./screenshots/DigitalClock.png)
 
 ---
 
