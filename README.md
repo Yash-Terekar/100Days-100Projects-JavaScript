@@ -36,7 +36,7 @@ Each project focuses on building logic, UI, animations, and real functionality t
 | ✅ Day 2   | Random Quote Generator    | Completed   |
 | ✅ Day 3   | Digital Clock             | Completed   |
 | ✅ Day 4   | To-Do List (Basic)        | Completed   |
-| 🔜 Day 5   | BMI Calculator            | Coming Soon |
+| ✅ Day 5   | BMI Calculator            | Completed   |
 | 🔜 Day 6   | Password Generator        | Coming Soon |
 | 🔜 Day 7   | Tip Calculator            | Coming Soon |
 | 🔜 Day 8   | Palindrome Checker        | Coming Soon |
