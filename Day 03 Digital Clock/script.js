@@ -52,7 +52,7 @@ function digitalClock() {
       .padStart(2, 0)}:${minutes}:${seconds}`;
     format.textContent = "";
   } else {
-    let ampm = hours > 12 ? "PM" : "AM";
+    let ampm = hours > 12 ? "AM" : "PM";
     hours = hours % 12 || 12;
     time.textContent = `${hours
       .toString()

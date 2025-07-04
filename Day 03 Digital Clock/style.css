@@ -17,7 +17,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 .container.light {
   background: white;
