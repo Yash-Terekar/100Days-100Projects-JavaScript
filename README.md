@@ -35,7 +35,7 @@ Each project focuses on building logic, UI, animations, and real functionality t
 | ✅ Day 1   | Counter App               | Completed   |
 | ✅ Day 2   | Random Quote Generator    | Completed   |
 | ✅ Day 3   | Digital Clock             | Completed   |
-| 🔜 Day 4   | To-Do List (Basic)        | Coming Soon |
+| ✅ Day 4   | To-Do List (Basic)        | Completed   |
 | 🔜 Day 5   | BMI Calculator            | Coming Soon |
 | 🔜 Day 6   | Password Generator        | Coming Soon |
 | 🔜 Day 7   | Tip Calculator            | Coming Soon |
@@ -54,9 +54,11 @@ _This table will be updated daily as I complete each project._
 ```
 100Days-100Projects-JavaScript/
 ├── Day01-CounterApp/
+│   ├── screenshots/
 │   ├── index.html
 │   ├── style.css
-│   └── script.js
+│   ├── script.js
+│   └── README.md
 ├── Day02-RandomQuoteGenerator/
 │   ├── ...
 ├── ...
