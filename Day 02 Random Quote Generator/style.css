@@ -27,6 +27,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 .quote {
   padding: 30px 60px;

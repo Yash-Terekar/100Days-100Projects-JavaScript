@@ -63,6 +63,6 @@ btn.addEventListener("click", () => {
 });
 btn.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
-    quoteChange;
+    quoteChange();
   }
 });
