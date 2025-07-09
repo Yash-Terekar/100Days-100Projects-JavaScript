@@ -1,16 +1,16 @@
-const uppercaseCheckbox = document.querySelector(".capital-checkbox"); // Renamed for clarity
-const lowercaseCheckbox = document.querySelector(".lower-checkbox"); // Renamed for clarity
-const numberCheckbox = document.querySelector(".num-checkbox"); // Renamed for clarity
-const symbolCheckbox = document.querySelector(".symbol-checkbox"); // Renamed for clarity
+const uppercaseCheckbox = document.querySelector(".capital-checkbox");
+const lowercaseCheckbox = document.querySelector(".lower-checkbox");
+const numberCheckbox = document.querySelector(".num-checkbox");
+const symbolCheckbox = document.querySelector(".symbol-checkbox");
 const length = document.querySelector(".length");
 
-const generateBtn = document.querySelector(".btn"); // Renamed for clarity
-const resultDisplay = document.querySelector(".result"); // Renamed for clarity
+const generateBtn = document.querySelector(".btn");
+const resultDisplay = document.querySelector(".result");
 
-const lowercaseChars = "abcdefghijklmnopqrstuvwxyz"; // Renamed for clarity
-const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // Renamed for clarity
-const numberChars = "0123456789"; // Renamed for clarity
-const symbolChars = "!@#$%^&*()_+[]{}|;:,.<>?"; // Renamed for clarity
+const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const numberChars = "0123456789";
+const symbolChars = "!@#$%^&*()_+[]{}|;:,.<>?";
 
 function generatePassword() {
   let allAllowedChars = ""; // This will store the pool of characters to choose from
