@@ -22,3 +22,12 @@ label {
   font-size: 3rem;
   padding: 10px;
 }
+
+.btn {
+  font-size: 2rem;
+  border-radius: 10px;
+  border-style: none;
+  background: blue;
+  color: white;
+  padding: 14px 30px;
+}
