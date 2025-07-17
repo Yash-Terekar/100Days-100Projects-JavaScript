@@ -7,31 +7,47 @@
   </head>
   <body>
     <div class="container">
-      <div class="check-boxes">
-        <label
-          ><input
-            type="text"
-            placeholder="Enter Length"
-            class="length" /></label
-        ><br />
-        <label>
-          <input type="checkbox" class="capital-checkbox box" />Uppercase
-          letters </label
-        ><br />
-        <label>
-          <input type="checkbox" class="lower-checkbox box" />Lowercase letters
-        </label>
-        <br />
-        <label>
-          <input type="checkbox" class="num-checkbox box" />Numbers
-        </label>
-        <br />
-        <label>
-          <input type="checkbox" class="symbol-checkbox box" />Special character
-        </label>
-        <br />
-        <button class="btn">Generate Password</button>
+      <label
+        ><input type="text" placeholder="Enter Length" class="length"
+      /></label>
+      <div class="checkbox-wrapper-47">
+        <!-- Uppercase Letters Checkbox -->
+        <input
+          type="checkbox"
+          class="uppercase-checkbox box"
+          name="cb-uppercase"
+          id="cb-uppercase"
+        />
+        <label for="cb-uppercase">Uppercase Letters</label>
+
+        <!-- Lowercase Letters Checkbox -->
+        <input
+          type="checkbox"
+          class="lowercase-checkbox box"
+          name="cb-lowercase"
+          id="cb-lowercase"
+        />
+        <label for="cb-lowercase">Lowercase Letters</label>
+
+        <!-- Numbers Checkbox -->
+        <input
+          type="checkbox"
+          class="number-checkbox box"
+          name="cb-number"
+          id="cb-number"
+        />
+        <label for="cb-number">Numbers</label>
+
+        <!-- Symbols Checkbox -->
+        <input
+          type="checkbox"
+          class="symbol-checkbox box"
+          name="cb-symbol"
+          id="cb-symbol"
+        />
+        <label for="cb-symbol">Symbols</label>
       </div>
+      <button class="btn">Generate Password</button>
       <div class="output"><h1 class="result">Yash@12345</h1></div>
     </div>
     <script src="script.js"></script>

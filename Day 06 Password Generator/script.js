@@ -1,6 +1,6 @@
-const uppercaseCheckbox = document.querySelector(".capital-checkbox");
-const lowercaseCheckbox = document.querySelector(".lower-checkbox");
-const numberCheckbox = document.querySelector(".num-checkbox");
+const uppercaseCheckbox = document.querySelector(".uppercase-checkbox");
+const lowercaseCheckbox = document.querySelector(".lowercase-checkbox");
+const numberCheckbox = document.querySelector(".number-checkbox");
 const symbolCheckbox = document.querySelector(".symbol-checkbox");
 const passLength = document.querySelector(".length");
 

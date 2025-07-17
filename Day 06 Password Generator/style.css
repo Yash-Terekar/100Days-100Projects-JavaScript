@@ -4,30 +4,134 @@
   box-sizing: border-box;
 }
 body {
+  font-family: "Inter", sans-serif; /* Using Inter font */
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background-color: #f0f2f5; /* Light background */
 }
 .container {
-  width: 1000px;
-  height: 600px;
-  background: rgb(1, 172, 172);
+  width: 100%;
+  max-width: 800px; /* Max width for better responsiveness */
+  padding: 2.5rem;
+  background: rgb(1, 172, 172); /* Teal background */
+  border-radius: 1.5rem; /* Rounded corners */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 1.5rem; /* Space between elements */
 }
-label {
-  font-size: 3rem;
-  padding: 10px;
+.length {
+  font-size: 1.5rem; /* Adjusted font size */
+  text-align: center;
+  width: 100%; /* Full width within container */
+  max-width: 250px; /* Max width for input */
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem; /* Rounded corners */
+  border: 1px solid #cbd5e1; /* Light border */
+  outline: none;
 }
+/* Removed the direct label styling that was too large */
+/* label {
+  font-size: 2.6rem;
+} */
 
 .btn {
-  font-size: 2rem;
-  border-radius: 10px;
+  margin-top: 1rem; /* Space above button */
+  font-size: 1.5rem; /* Adjusted font size */
+  border-radius: 0.75rem; /* Rounded corners */
   border-style: none;
-  background: blue;
+  background: #4f46e5; /* Indigo blue */
   color: white;
-  padding: 14px 30px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn:hover {
+  background-color: #4338ca; /* Darker indigo on hover */
+  transform: translateY(-1px);
+}
+.btn:active {
+  transform: translateY(0);
+}
+.result {
+  font-size: 2.5rem; /* Adjusted font size */
+  color: #fff; /* White text for result */
+  margin-top: 1.5rem;
+  word-break: break-all; /* Break long passwords */
+}
+
+/* Custom Checkbox Styling */
+.checkbox-wrapper-47 {
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack checkboxes vertically */
+  gap: 0.5rem; /* Space between checkbox items */
+  align-items: flex-start; /* Align labels to the left */
+  width: 100%; /* Take full width */
+  max-width: 400px; /* Max width for checkbox group */
+}
+
+.checkbox-wrapper-47 input[type="checkbox"] {
+  /* Hide the actual checkbox input */
+  display: none;
+  visibility: hidden;
+}
+
+.checkbox-wrapper-47 label {
+  position: relative;
+  padding-left: 2.2em; /* Space for the custom checkbox square */
+  line-height: 1.8; /* Adjust line height for better spacing */
+  cursor: pointer;
+  font-size: 1.8rem; /* Font size for label text */
+  color: #fff; /* White text for labels */
+  display: block; /* Make label a block element for padding */
+}
+
+.checkbox-wrapper-47 label:before {
+  box-sizing: border-box;
+  /* Content for the custom checkbox square. Use an empty string or a checkmark symbol if desired. */
+  content: "";
+  position: absolute;
+  top: 0.3em; /* Align vertically with text */
+  left: 0;
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+  border: 2px solid #9098a9; /* Border for the square */
+  border-radius: 4px; /* Slightly rounded corners for the square */
+  background-color: #f8fafc; /* Light background for unchecked box */
+  /* Z-index change: Removed -1 to ensure it's not hidden behind other elements */
+  z-index: 0; /* Or remove it entirely if not needed for stacking */
+  transition: 0.25s all ease; /* Smooth transition */
+}
+
+/* Style when the checkbox is checked */
+.checkbox-wrapper-47 input[type="checkbox"]:checked + label {
+  color: #0f5229; /* Darker text when checked */
+  /* Removed padding-left: 1em; here as it shifts the text */
+}
+
+.checkbox-wrapper-47 input[type="checkbox"]:checked + label:before {
+  top: 0.3em; /* Maintain vertical alignment */
+  width: 1.4em; /* Maintain width */
+  height: 1.4em; /* Maintain height */
+  background: #2cbc63; /* Green background for checked box */
+  border-color: green; /* Green border */
+  /* Add a checkmark (optional, but common) */
+  content: "✔"; /* Unicode checkmark */
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* White checkmark */
+}
+
+.checkbox-wrapper-47 label,
+.checkbox-wrapper-47 label::before {
+  transition: 0.25s all ease;
 }
