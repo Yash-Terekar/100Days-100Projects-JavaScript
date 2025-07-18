@@ -37,7 +37,7 @@ Each project focuses on building logic, UI, animations, and real functionality t
 | ✅ Day 3   | Digital Clock             | Completed   |
 | ✅ Day 4   | To-Do List (Basic)        | Completed   |
 | ✅ Day 5   | BMI Calculator            | Completed   |
-| 🔜 Day 6   | Password Generator        | Coming Soon |
+| ✅ Day 6   | Password Generator        | Completed   |
 | 🔜 Day 7   | Tip Calculator            | Coming Soon |
 | 🔜 Day 8   | Palindrome Checker        | Coming Soon |
 | 🔜 Day 9   | Dice Roll Simulator       | Coming Soon |
