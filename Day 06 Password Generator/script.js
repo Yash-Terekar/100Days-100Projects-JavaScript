@@ -15,14 +15,13 @@ const symbolChars = "!@#$%^&*()_+[]{}|;:,.<>?";
 function randomPassword() {
   let allAllowedChars = "";
   let randomPassword = "";
-
   let passwordLength = passLength.value;
+
   if (passwordLength === "") {
-    alert("Please enter length of password");
+    alert("Please provide length for password");
     resultDisplay.textContent = "Enter Length";
     return;
   }
-
   if (uppercaseCheckbox.checked) {
     allAllowedChars += uppercaseChars;
   }
@@ -45,9 +44,9 @@ function randomPassword() {
   for (let i = 0; i < passwordLength; i++) {
     const randomIndex = Math.floor(Math.random() * allAllowedChars.length);
     const randomChars = allAllowedChars[randomIndex];
-    randomPassword += randomChars;
-  }
 
-  resultDisplay.textContent = randomPassword;
+    randomPassword += randomChars;
+    resultDisplay.textContent = randomPassword;
+  }
 }
 generateBtn.addEventListener("click", randomPassword);
