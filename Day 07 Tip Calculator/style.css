@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 600px;
+  width: 900px;
+  background: chocolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.inputs {
+  font-size: 2rem;
+}
+input {
+  width: 100px;
+  font-size: 2rem;
+}
+.btn {
+  cursor: pointer;
+  text-align: center;
+  background: wheat;
+  align-self: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.btn:hover {
+  background: rgb(255, 196, 88);
+  transform: translateY(-2px);
+  border: 2px solid rgb(139, 70, 21);
+}
+section {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  font-size: 3rem;
+}
+
+.final-amount {
+  font-size: 3rem;
+}

@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 7 Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div class="inputs">
+          <label for="total-bill">Total Amount</label>
+          <input
+            type="text"
+            placeholder="bill amount"
+            class="bill-amount"
+            id="total-bill"
+          />
+          <br />
+          <label for="total-tip">Tip</label>
+          <input type="text" placeholder="tip" class="tip" id="total-tip" />
+          <br />
+          <label for="total-persons">Total Persons</label>
+          <input
+            type="text"
+            placeholder="number of persons"
+            class="persons"
+            id="total-persons"
+          />
+        </div>
+        <div class="btn">Generate Tip Amount</div>
+      </main>
+      <section class="outputs">
+        <div class="total-tip">200</div>
+        <div class="total-bill">1200</div>
+        <div class="tip-per-person">50</div>
+      </section>
+      <div class="final-amount">
+        Final Bill Amount :
+        <span class="final"></span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
