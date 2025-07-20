@@ -18,6 +18,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 main {
   width: 80%;
@@ -25,12 +26,20 @@ main {
   justify-content: space-around;
 }
 .inputs {
+  padding: 20px 10px;
   font-size: 2rem;
 }
 input {
-  width: 100px;
+  padding: 10px 0px;
+  margin: 20px 0px;
+  width: 150px;
   font-size: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  background: wheat;
+  border-style: none;
 }
+
 .btn {
   cursor: pointer;
   text-align: center;
@@ -38,19 +47,53 @@ input {
   align-self: center;
   padding: 10px 20px;
   border-radius: 10px;
+  font-size: 2rem;
 }
 .btn:hover {
   background: rgb(255, 196, 88);
   transform: translateY(-2px);
   border: 2px solid rgb(139, 70, 21);
 }
+
 section {
   display: flex;
   width: 80%;
   justify-content: space-around;
-  font-size: 3rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .final-amount {
   font-size: 3rem;
+}
+
+@media (max-width: 720px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (max-width: 460px) {
+  .inputs {
+    font-size: 1.4rem;
+  }
+  .input {
+    width: 20px;
+    font-size: 1rem;
+    margin: 0;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn {
+    font-size: 1.4rem;
+  }
+  section {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  .final-amount {
+    font-size: 1.6rem;
+  }
 }
