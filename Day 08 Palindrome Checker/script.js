@@ -2,28 +2,29 @@ const input = document.querySelector(".input");
 const btn = document.querySelector(".btn");
 const result = document.querySelector(".output");
 
+function isAlphanumeric(str) {
+  const letters = /^[a-zA-Z0-9]+$/;
+  return letters.test(str);
+}
 function checkPalindrome() {
-  let num = input.value.trim();
+  let rawInput = input.value.trim();
 
-  if (num == "") {
-    alert("Enter a Number");
-    result.textContent = "Enter a Number";
+  if (rawInput == "") {
+    alert("Enter Palindrome");
+    result.textContent = "Enter a Valid Input";
     return;
   }
 
-  num = parseInt(num);
-
-  if (isNaN(num)) {
-    alert("Please Enter a Valid Number");
+  if (!isAlphanumeric(rawInput)) {
+    alert("Invalid input: Use only letters and numbers.");
+    result.textContent = `Invalid input: ${rawInput}`;
     return;
   }
-
-  let reverseNum = num.toString().split("").reverse().join("");
-
-  if (num == reverseNum) {
-    result.textContent = `${num} is Palindrome Number`;
+  let reverseInput = rawInput.toString().split("").reverse().join("");
+  if (rawInput === reverseInput) {
+    result.textContent = `${rawInput} is a Palindrome `;
   } else {
-    result.textContent = `${num} is not a Palindrome`;
+    result.textContent = `${rawInput} is not a Palindrome`;
   }
 }
 btn.addEventListener("click", checkPalindrome);
