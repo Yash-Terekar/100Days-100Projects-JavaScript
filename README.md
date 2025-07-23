@@ -39,7 +39,7 @@ Each project focuses on building logic, UI, animations, and real functionality t
 | ✅ Day 5   | BMI Calculator            | Completed   |
 | ✅ Day 6   | Password Generator        | Completed   |
 | ✅ Day 7   | Tip Calculator            | Completed   |
-| 🔜 Day 8   | Palindrome Checker        | Coming Soon |
+| ✅ Day 8   | Palindrome Checker        | Completed   |
 | 🔜 Day 9   | Dice Roll Simulator       | Coming Soon |
 | 🔜 Day 10  | QR Code Generator (API)   | Coming Soon |
 | ...        | ...                       | ...         |
