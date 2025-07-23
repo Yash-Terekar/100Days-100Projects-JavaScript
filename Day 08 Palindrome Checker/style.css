@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(142, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+.container {
+  width: 1000px;
+  height: 600px;
+  background: teal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label {
+  font-size: 4rem;
+}
+input {
+  border-style: none;
+  margin: 20px 0px;
+  width: 300px;
+  background: white;
+  font-size: 3rem;
+  text-align: center;
+  border-radius: 10px;
+}
+.btn {
+  background: rgb(142, 255, 255);
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.btn:hover {
+  border: 3px solid rgb(0, 73, 73);
+}
+.output {
+  text-align: center;
+  max-width: 80%;
+  font-size: 4rem;
+}
+
+@media (max-width: 460px) {
+  label {
+    font-size: 3rem;
+  }
+  .btn {
+    font-size: 1.4rem;
+  }
+  .output {
+    font-size: 3rem;
+  }
+}
