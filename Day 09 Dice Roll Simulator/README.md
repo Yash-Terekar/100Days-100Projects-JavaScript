@@ -10,7 +10,7 @@ A simple dice roll simulator that generates a random value (1–6) each time the
 
 ### 🔹 Main Interface
 
-![Main Interface](./screenshots/DiceRollMai.png)
+![Main Interface](./screenshots/DiceRollMain.png)
 
 ### 🔹 Rolled Dice
 
