@@ -26,6 +26,7 @@ function diceRoll() {
     dice2.style.opacity = "1";
   }, 300);
 
-  res.textContent = randomIndex + 1 + (randomIndex2 + 1);
+  const sum = randomIndex + 1 + (randomIndex2 + 1);
+  res.textContent = `Sum: ${sum}`;
 }
 btn.addEventListener("click", diceRoll);
