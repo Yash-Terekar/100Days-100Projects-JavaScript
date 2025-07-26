@@ -30,20 +30,20 @@ Each project focuses on building logic, UI, animations, and real functionality t
 
 ## 📆 Daily Project Tracker
 
-| Day        | Project Name              | Status      |
-| ---------- | ------------------------- | ----------- |
-| ✅ Day 1   | Counter App               | Completed   |
-| ✅ Day 2   | Random Quote Generator    | Completed   |
-| ✅ Day 3   | Digital Clock             | Completed   |
-| ✅ Day 4   | To-Do List (Basic)        | Completed   |
-| ✅ Day 5   | BMI Calculator            | Completed   |
-| ✅ Day 6   | Password Generator        | Completed   |
-| ✅ Day 7   | Tip Calculator            | Completed   |
-| ✅ Day 8   | Palindrome Checker        | Completed   |
-| ✅ Day 9   | Dice Roll Simulator       | Completed   |
-| 🔜 Day 10  | QR Code Generator (API)   | Coming Soon |
-| ...        | ...                       | ...         |
-| 🔜 Day 100 | Portfolio Website (Final) | Coming Soon |
+| Day        | Project Name                | Status      |
+| ---------- | --------------------------- | ----------- |
+| ✅ Day 1   | Counter App                 | Completed   |
+| ✅ Day 2   | Random Quote Generator      | Completed   |
+| ✅ Day 3   | Digital Clock               | Completed   |
+| ✅ Day 4   | To-Do List (Basic)          | Completed   |
+| ✅ Day 5   | BMI Calculator              | Completed   |
+| ✅ Day 6   | Password Generator          | Completed   |
+| ✅ Day 7   | Tip Calculator              | Completed   |
+| ✅ Day 8   | Palindrome Checker          | Completed   |
+| ✅ Day 9   | Dice Roll Simulator         | Completed   |
+| ✅ Day 10  | Random Background Generator | Completed   |
+| ...        | ...                         | ...         |
+| 🔜 Day 100 | Portfolio Website (Final)   | Coming Soon |
 
 _This table will be updated daily as I complete each project._
 
