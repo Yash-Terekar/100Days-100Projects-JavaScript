@@ -4,12 +4,17 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: 1s;
 }
 h1 {
   font-size: 80px;
 }
 .code {
+  margin: 20px 0px;
+  padding: 6px 12px;
   font-size: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
 }
 .btn {
   padding: 14px 24px;
@@ -17,4 +22,16 @@ h1 {
   border-style: none;
   cursor: pointer;
   font-size: 20px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px black;
+}
+.toggle {
+  background: #fff;
+  padding: 12px 24px;
+  font-size: 20px;
+  border-style: none;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
 }
