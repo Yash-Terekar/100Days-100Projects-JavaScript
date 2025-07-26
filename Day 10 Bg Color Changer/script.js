@@ -6,6 +6,7 @@ const h1 = document.querySelector("h1");
 toggle.addEventListener("click", () => {
   toggle.textContent = toggle.textContent === "HEX" ? "RGB" : "HEX";
 });
+
 btn.addEventListener("click", () => {
   const r = Math.floor(Math.random() * 256);
   const g = Math.floor(Math.random() * 256);
