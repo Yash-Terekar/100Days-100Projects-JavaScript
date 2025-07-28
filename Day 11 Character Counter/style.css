@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 900px;
+  height: 600px;
+  background: rgb(88, 255, 88);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+h2 {
+  font-size: 40px;
+}
+input {
+  text-align: center;
+  border-radius: 10px;
+  border-style: none;
+  font-size: 2rem;
+  margin: 20px;
+}
+.result {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.progress-container {
+  margin-top: 10px;
+  background: white;
+  width: 600px;
+  height: 30px;
+  overflow: hidden;
+  margin-bottom: 60px;
+  border: 2px solid black;
+}
+.progress-bar {
+  height: 30px;
+  background-color: green;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+.warning {
+  color: red;
+}
+
+@media (max-width: 460px) {
+  .container {
+    width: 100%;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  input {
+    width: 60%;
+  }
+  .result {
+    font-size: 30px;
+  }
+  .progress-container {
+    width: 80%;
+  }
+}
