@@ -1,0 +1,11 @@
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 1200px;
+  height: 700px;
+  background: wheat;
+}
