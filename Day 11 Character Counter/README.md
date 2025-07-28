@@ -28,6 +28,7 @@ A simple app where users can type into a textarea and see a live character count
 - Displays remaining characters based on limit
 - Responsive UI and smooth updates
 - Warning color when near limit
+- Media queries for different screens
 
 ---
 
