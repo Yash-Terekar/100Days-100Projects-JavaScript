@@ -43,6 +43,7 @@ Each project focuses on building logic, UI, animations, and real functionality t
 | ✅ Day 9   | Dice Roll Simulator         | Completed   |
 | ✅ Day 10  | Random Background Generator | Completed   |
 | ✅ Day 11  | Character Counter           | Completed   |
+| 🔜 Day 12  | Image Slider                | Coming Soon |
 | ...        | ...                         | ...         |
 | 🔜 Day 100 | Portfolio Website (Final)   | Coming Soon |
 
