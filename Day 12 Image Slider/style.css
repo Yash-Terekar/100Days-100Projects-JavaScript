@@ -8,4 +8,24 @@ body {
   width: 1200px;
   height: 700px;
   background: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.image-slider {
+  display: flex;
+}
+.btn {
+  padding: 20px;
+  height: 20px;
+  background: grey;
+  align-self: center;
+  margin: 20px;
+  text-align: center;
+}
+img {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
 }
