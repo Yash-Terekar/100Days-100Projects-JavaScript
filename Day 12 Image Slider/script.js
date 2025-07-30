@@ -1,6 +1,8 @@
 const img = document.querySelector("img");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
+const ul = document.querySelector(".ul");
+
 const images = [
   "https://images.pexels.com/photos/33202739/pexels-photo-33202739.jpeg",
   "https://images.pexels.com/photos/32542488/pexels-photo-32542488.jpeg",
@@ -12,34 +14,55 @@ const images = [
 ];
 
 let currentIndex = 0;
+
+function updateSlider() {
+  img.classList.add("fading");
+  setTimeout(() => {
+    img.src = images[currentIndex];
+    img.alt = `Slider Image ${currentIndex + 1}`;
+    img.classList.remove("fading");
+  }, 600);
+
+  document.querySelectorAll(".ul li").forEach((li, index) => {
+    li.classList.toggle("active", index === currentIndex);
+  });
+}
+
 img.src = images[currentIndex];
+img.alt = `Slider Image ${currentIndex + 2}`;
+
+images.forEach((image, index) => {
+  const li = document.createElement("li");
+  li.style.backgroundImage = `url(${image})`;
+  li.setAttribute("aria-label", `Select Image ${index + 1}`);
+  li.addEventListener("click", () => {
+    currentIndex = index;
+    updateSlider();
+  });
+  ul.appendChild(li);
+});
 
 next.addEventListener("click", () => {
-  currentIndex++;
-  if (currentIndex >= images.length) currentIndex = 0;
-  img.src = images[currentIndex];
+  currentIndex = (currentIndex + 1) % images.length;
+  updateSlider();
 });
 prev.addEventListener("click", () => {
-  currentIndex--;
-  if (currentIndex >= images.length) currentIndex = 0;
-  img.src = images[currentIndex];
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  updateSlider();
 });
-setInterval(() => {
-  currentIndex++;
-  if (currentIndex >= images.length) currentIndex = 0;
-  img.src = images[currentIndex];
-}, 2000);
 
-// function imageChanger() {}
-// function imageChanger() {
-//   const currentSrc = img.getAttribute("src");
-//   let currentIndex = images.indexOf(currentSrc);
+let loop = setInterval(() => {
+  currentIndex = (currentIndex + 1) % images.length;
+  updateSlider();
+}, 3000);
+img.addEventListener("mouseover", () => {
+  clearInterval(loop);
+});
+img.addEventListener("mouseout", () => {
+  loop = setInterval(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateSlider();
+  }, 3000);
+});
 
-//   // Increment index and wrap around if necessary
-//   currentIndex = (currentIndex + 1) % images.length;
-
-//   // Update the image source
-//   img.setAttribute("src", images[currentIndex]);
-// }
-// img.setAttribute("src", images[0]); // Set initial image
-// btn.addEventListener("click", imageChanger);
+updateSlider();
