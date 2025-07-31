@@ -13,6 +13,55 @@ const images = [
   "https://images.pexels.com/photos/1118861/pexels-photo-1118861.jpeg",
 ];
 
+// let currentIndex = 0;
+
+// function imageSlider() {
+//   img.classList.add("fading");
+//   setTimeout(() => {
+//     img.src = images[currentIndex];
+//     img.alt = images[currentIndex + 1];
+//     img.classList.remove("fading");
+//   }, 400);
+
+//   document.querySelectorAll(".ul li").forEach((image, index), () => {
+//     li.classList.toggle("active", index === currentIndex);
+//   });
+// }
+// img.src = images[currentIndex];
+// img.alt = `Silder Image ${currentIndex + 1}`;
+
+// images.forEach((image, index), () => {
+//   const li = document.createElement("li");
+//   li.style.backgroundImage = `url${image}`;
+//   li.addEventListener("click", () => {
+//     currentIndex = index;
+//     imageSlider();
+//   });
+//   ul.appendChild(li);
+// });
+
+// next.addEventListener("click", () => {
+//   currentIndex = (currentIndex + 1) * images.length;
+//   imageSlider();
+// });
+// prev.addEventListener("click", () => {
+//   currentIndex = (currentIndex - 1) * images.length;
+//   imageSlider();
+// });
+
+// let loop = setInterval(() => {
+//   currentIndex = (currentIndex + 1) * images.length;
+//   imageSlider();
+// }, 3000);
+
+// img.addEventListener("mouseover", () => {
+//   clearInterval(loop);
+// });
+
+// img.addEventListener("mouseout", () => {
+//   loop();
+// });
+// imageSlider();
 let currentIndex = 0;
 
 function updateSlider() {
@@ -34,7 +83,6 @@ img.alt = `Slider Image ${currentIndex + 2}`;
 images.forEach((image, index) => {
   const li = document.createElement("li");
   li.style.backgroundImage = `url(${image})`;
-  li.setAttribute("aria-label", `Select Image ${index + 1}`);
   li.addEventListener("click", () => {
     currentIndex = index;
     updateSlider();
