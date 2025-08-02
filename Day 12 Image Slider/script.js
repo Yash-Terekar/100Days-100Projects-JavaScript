@@ -19,7 +19,7 @@ function imageSlider() {
   img.classList.add("fading");
   setTimeout(() => {
     img.src = images[currentIndex];
-    img.alt = `Slider Image ${currentIndex + 1}`;
+    img.alt = `Image Slider ${currentIndex + 1}`;
     img.classList.remove("fading");
   }, 600);
   document.querySelectorAll(".ul li").forEach((li, index) => {
@@ -28,7 +28,7 @@ function imageSlider() {
 }
 
 img.src = images[currentIndex];
-img.alt = `Slider Image ${currentIndex + 2}`;
+img.alt = `Image Slider ${currentIndex + 2}`;
 
 images.forEach((image, index) => {
   const li = document.createElement("li");
@@ -45,7 +45,7 @@ next.addEventListener("click", () => {
   imageSlider();
 });
 prev.addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  currentIndex = (currentIndex - 1) % images.length;
   imageSlider();
 });
 
