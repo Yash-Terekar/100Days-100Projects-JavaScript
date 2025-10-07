@@ -5,16 +5,14 @@ const password = document.querySelector("#pass1");
 const pass2 = document.querySelector("#pass2");
 
 form.addEventListener("submit", (event) => {
-  event.preventDefault(); // Prevent form submission
+  event.preventDefault();
 
-  // Reset error messages
   document
     .querySelectorAll(".error")
     .forEach((error) => (error.textContent = ""));
 
   let isValid = true;
 
-  // Username validation
   if (username.value === "") {
     setError(username, "Username is required");
     isValid = false;
@@ -23,7 +21,6 @@ form.addEventListener("submit", (event) => {
     isValid = false;
   }
 
-  // Email validation
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (email.value === "") {
     setError(email, "Email is required");
@@ -33,7 +30,6 @@ form.addEventListener("submit", (event) => {
     isValid = false;
   }
 
-  // Password validation
   if (password.value === "") {
     setError(password, "Password is required");
     isValid = false;
@@ -42,7 +38,6 @@ form.addEventListener("submit", (event) => {
     isValid = false;
   }
 
-  // Confirm password validation
   if (pass2.value === "") {
     setError(pass2, "Please confirm your password");
     isValid = false;
@@ -51,14 +46,12 @@ form.addEventListener("submit", (event) => {
     isValid = false;
   }
 
-  // If all validations pass, you can proceed (e.g., submit to server)
   if (isValid) {
     alert("Form submitted successfully!");
-    form.reset(); // Clear form
+    form.reset();
   }
 });
 
-// Helper function to set error message
 function setError(input, message) {
   const formGroup = input.parentElement;
   const errorElement = formGroup.querySelector(".error");
